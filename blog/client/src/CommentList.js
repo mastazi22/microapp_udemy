@@ -6,7 +6,7 @@ export default ({ postId }) => {
 
   const fetchData = async () => {
     const res = await axios.get(
-      `http://localhost:4001/posts/${postId}/comments`
+      `http://18.221.121.202:4001/posts/${postId}/comments`
     );
 
     setComments(res.data);
